@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MyselfDev — Devendra Sein. Student, creator and online earning enthusiast.">
+<title>MyselfDev — Devendra Sein</title>
+<style>
+:root{--black:#080808;--wine:#b20d2f;--red:#ef1838;--white:#fff;--soft:#f5f5f5;--gray:#bdbdbd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#111;background:var(--soft);line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.96);color:#fff;padding:15px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #292929}
+.brand{font-size:22px;font-weight:800}.brand span{color:var(--red)}
+.logo{display:inline-flex;width:36px;height:36px;border-radius:50%;align-items:center;justify-content:center;margin-right:8px;background:#111;border:1px solid var(--red);font-weight:900;color:#fff}
+.navlinks{display:flex;gap:22px;font-size:14px}.navlinks a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:12px 20px;border-radius:30px;font-weight:700;border:1px solid var(--red);transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn.dark{background:#111;border-color:#444}
+.hero{background:radial-gradient(circle at 80% 45%,#3b0713 0,#120306 30%,#080808 65%);color:#fff;padding:85px 6%;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;min-height:620px}
+.kicker{color:#ff2446;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:12px 0 20px}.accent{color:var(--red)}
+.hero p{max-width:650px;color:#ddd;font-size:18px}
+.actions{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.dsmark{width:290px;height:290px;border-radius:50%;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;margin:auto;background:radial-gradient(circle,#25030c,#050505 65%);box-shadow:0 0 55px rgba(239,24,56,.22)}
+.dsmark strong{font-size:100px;letter-spacing:-12px;font-style:italic}.dsmark small{position:absolute;margin-top:155px;letter-spacing:5px;color:#ddd}
+section{padding:75px 6%}.light{background:#fff}.dark{background:#090909;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.card{padding:28px;border:1px solid #292929;border-radius:18px;background:#111;color:#fff}
+.light .card{background:#fff;color:#111;border-color:#ddd}
+.card h3{margin-bottom:8px}.card p{color:#777}.dark .card p{color:#bbb}
+.section-title{font-size:42px;line-height:1.1;margin-top:8px}.section-title span{color:var(--red)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.quote{font-size:28px;font-weight:800}.quote span{color:var(--red)}
+.platform{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:25px;border:1px solid #ddd;border-radius:18px;background:#fff;margin-top:28px}
+footer{background:#050505;color:#aaa;padding:28px 6%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){
+ .navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:65px;min-height:auto}.dsmark{width:220px;height:220px}.dsmark strong{font-size:78px}.dsmark small{margin-top:125px}
+ .grid,.about{grid-template-columns:1fr}.section-title{font-size:34px}.hero p{font-size:16px}.platform{align-items:flex-start;flex-direction:column}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="#home"><span class="logo">DS</span>Myself<span>Dev</span></a>
+  <div class="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">My Work</a><a href="#contact">Contact</a></div>
+  <a class="btn" href="#contact">Work With Me →</a>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="kicker">Hello, I'm</div>
+    <h1>Devendra <span class="accent">Sein</span></h1>
+    <p>Student • Creator • Online Earning Explorer</p>
+    <p style="margin-top:12px">I'm learning, creating and exploring online opportunities. My goal is simple — build skills, create value and grow step by step.</p>
+    <div class="actions">
+      <a class="btn" href="#contact">Let's Connect →</a>
+      <a class="btn dark" href="https://youtube.com/@cringedev2007" target="_blank" rel="noopener">▶ YouTube</a>
+    </div>
+  </div>
+  <div class="dsmark"><strong>D<span style="color:var(--red)">S</span></strong><small>MYSELFDEV</small></div>
+</section>
+
+<section class="light" id="about">
+ <div class="about">
+  <div><div class="kicker">About Me</div><h2 class="section-title">Who Am <span>I?</span></h2>
+  <p style="margin-top:18px;color:#555">I'm Devendra Sein, a student with big dreams. I'm interested in content creation, digital skills and learning practical ways to build online income.</p></div>
+  <div class="card" style="background:#090909;color:#fff;border-color:#090909">
+    <h3>Student</h3><p>Learning & growing every day.</p><br>
+    <h3>Creator</h3><p>Ideas, content & experiments.</p><br>
+    <h3>Online Earning</h3><p>Exploring genuine digital opportunities.</p>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="services">
+ <div class="kicker">What I Do</div><h2 class="section-title">My <span>Focus</span></h2>
+ <div class="grid">
+  <div class="card"><h3>🎬 Content Creation</h3><p>Videos, ideas and learning through YouTube.</p></div>
+  <div class="card"><h3>💻 Digital Skills</h3><p>Learning useful online tools and skills.</p></div>
+  <div class="card"><h3>💰 Online Earning</h3><p>Exploring beginner-friendly, genuine online opportunities.</p></div>
+ </div>
+</section>
+
+<section class="light" id="work">
+ <div class="kicker">My Work</div><h2 class="section-title">My <span>Platform</span></h2>
+ <div class="platform">
+  <div><h3>CringeDev2007</h3><p style="color:#777">My YouTube channel — content, experiments and my creator journey.</p></div>
+  <a class="btn" href="https://youtube.com/@cringedev2007" target="_blank" rel="noopener">Visit YouTube →</a>
+ </div>
+</section>
+
+<section class="dark" id="contact">
+ <div class="kicker">Contact</div><h2 class="section-title">Let's <span>Connect</span></h2>
+ <p style="margin-top:12px;color:#bbb">Have an idea, question or collaboration? Feel free to reach out.</p>
+ <div class="actions">
+   <a class="btn" href="mailto:devendrasen772007@gmail.com">✉ Email Me</a>
+   <a class="btn dark" href="https://youtube.com/@cringedev2007" target="_blank" rel="noopener">▶ YouTube</a>
+ </div>
+</section>
+</main>
+
+<footer><div><strong style="color:#fff">DS • Myself<span style="color:var(--red)">Dev</span></strong></div><div>© 2026 MyselfDev • Dream · Create · Learn · Grow</div></footer>
+</body>
+</html>
